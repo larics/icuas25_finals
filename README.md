@@ -61,7 +61,7 @@ For connecting with ROS2 crazyswarm2 package follow [instructions] (https://imrc
 
 ## Start:
 
-To connect with crazyflies with crazyswarm2 navigate to `/root/ros2_ws/src/icuas25_competition/startup`. and run `./start.sh`. This will start node to connect the camera to the wifi, crazyflie_server (with reconnection property), octomap_server and the emergency script. Mentioned programms are obligated to run the whole time during your run! You can start your code only after all crazyflies are fully connected. Once they are fully connected, the topic `/mission start` will publish `True` message.
+To connect with crazyflies with crazyswarm2 navigate to `/root/ros2_ws/src/icuas25_competition/startup`. and run `./start.sh`. This will start node to connect the camera to the wifi, crazyflie_server_reconnect (with reconnection property), octomap_server and the emergency script. Mentioned programms are obligated to run the whole time during your run! You can start your code only after all crazyflies are fully connected. Once they are fully connected, the topic `/mission start` will publish `True` message.
 
 
 ### Battery Monitoring
