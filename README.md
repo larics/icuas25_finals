@@ -61,7 +61,8 @@ For connecting with ROS2 crazyswarm2 package follow [instructions] (https://imrc
 
 ## Start:
 
-To connect with crazyflies with crazyswarm2 navigate to `/root/ros2_ws/src/icuas25_competition/startup`. and run `./start.sh`. This will start node to connect the camera to the wifi, crazyflie_server, octomap_server and the emergency script. Mentioned programms are obligated to run the whole time during your run! You can start your code only after all crazyflies are fully connected. Once they are fully connected, the topic `/mission start` will publish `True` message.
+To connect with crazyflies with crazyswarm2 navigate to `/root/ros2_ws/src/icuas25_competition/startup`. and run `./start.sh`. This will start node to connect the camera to the wifi, crazyflie_server (with reconnection property), octomap_server and the emergency script. Mentioned programms are obligated to run the whole time during your run! You can start your code only after all crazyflies are fully connected. Once they are fully connected, the topic `/mission start` will publish `True` message.
+
 
 ### Battery Monitoring
 Information about the battery is available on topic `/cf_x/status`, where `cf_x` is the namespace of a specific Crazyflie. Message type is [`Status`](https://github.com/IMRCLab/crazyswarm2/blob/main/crazyflie_interfaces/msg/Status.msg) defined in `crazyflie_interfaces` of `Crazyswarm2` repo. The field `battery_voltage` indicates battery level in Volts. You can either follow its status on your own, or/and  you can subscribe to topic `/return_to_base`. This topic publishes `Bool` message. If `True` it signals that battery is at critical level and you have enough charge to safely return to base. Battery is considered fully charged if its voltage level is above 4V.
