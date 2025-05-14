@@ -14,11 +14,14 @@ camera_info:
 
 cameras:
   cf_1:
-    deck_ip: "192.168.1.139"
+    deck_ip: "10.0.0.5"
     deck_port: 5000
   cf_2:
-    deck_ip: "192.168.1.124"
+    deck_ip: "10.0.0.9"
     deck_port: 5000
   cf_3:
-    deck_ip: "192.168.1.144"
+    deck_ip: "10.0.0.10"
     deck_port: 5000
+  # cf_4:
+  #   deck_ip: "10.0.0.9"
+  #   deck_port: 5000

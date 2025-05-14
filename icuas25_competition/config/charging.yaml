@@ -1,3 +1,3 @@
 charging_area:
-  upper_left: [-1,1.25]
-  down_right: [-1.75,-1.25]
+  upper_left: [1.0,0.8]
+  down_right: [0.0,-0.8]
